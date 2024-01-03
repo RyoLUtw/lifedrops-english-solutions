@@ -3,29 +3,68 @@
 <head>
     <title>Homepage</title>
     <style>
+           .image-holder {
+        text-align: center; /* Center the image */
+        max-width: 600px; /* Maximum width of the container */
+        margin: 0 auto; /* Center the container */
+    }
+
+    .image-holder img {
+        max-width: 100%;
+        max-height: 50vh;
+        height: auto; /* Maintain aspect ratio */
+        width: auto; /* Allow width to scale */
+    }
+
+    @media (max-width: 768px) { /* Adjustments for smaller screens */
+        .image-holder {
+            max-width: 100%;
+        }
+
+        .image-holder img {
+            max-height: 50vh;
+        }
+    }
         .section {
+            text-align: center; /* Center-align everything in the section */
             margin-bottom: 20px;
+            width: 100%;
         }
 
         .section h2 {
-            color: black
+            color: black;
+            text-align: center;
         }
 
         .link {
             display: inline-block;
-            margin-left: 20px;
-            margin-bottom: 15px;
+            width: 100%;
+            margin-bottom: 5px;
+            display: inline-block;
+            padding: 10px 0px;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            transition: background-color 0.3s;
+        }
+
+        .link:hover {
+            background-color: #e0e0e0;
         }
     </style>
 </head>
 <body>
+    <div class="image-holder">
+        <img src="Title Image.png" alt="點滴救英文 Lifedrops English Solutions" style="max-width:auto; max-height:10%;">
+    </div>
+    <hr>
     <div class="section" id="section1">
         <h2>單字學習</h2>
         <a href="https://ryolutw.github.io/VLA-requiresKey/" class="link">學習小幫手(學生版)</a><br>
         <a href="https://ryolutw.github.io/VLA-teacher" class="link">學習小幫手(老師版)</a><br>
         <a href="https://ryolutw.github.io/study-set-manager/?authuser=0" class="link">學習集編輯器</a>
     </div>
-
+    <hr>
     <div class="section" id="section2">
         <h2>寫作練習</h2>
         <a href="https://ryolutw.github.io/TLA-student/?authuser=0" class="link">翻譯練習</a><br>
