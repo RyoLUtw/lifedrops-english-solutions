@@ -2,8 +2,23 @@
 <html>
 <head>
     <title>Homepage</title>
-    <style>
-           .image-holder {
+<style>
+    /* Base font size for the document */
+    html {
+        font-size: 16px; /* Default size, adjust as needed */
+    }
+
+    @media (max-width: 768px) { /* Adjust font size for smaller screens */
+        html {
+            font-size: 14px; /* Smaller base font size on smaller screens */
+        }
+    }
+
+    body {
+        font-size: 0.875rem; /* Base font size for the body */
+    }
+
+    .image-holder {
         text-align: center; /* Center the image */
         max-width: 600px; /* Maximum width of the container */
         margin: 0 auto; /* Center the container */
@@ -25,33 +40,35 @@
             max-height: 50vh;
         }
     }
-        .section {
-            text-align: center; /* Center-align everything in the section */
-            margin-bottom: 20px;
-            width: 100%;
-        }
 
-        .section h2 {
-            color: black;
-            text-align: center;
-        }
+    .section {
+        text-align: center; /* Center-align everything in the section */
+        margin-bottom: 20px;
+        width: 100%;
+    }
 
-        .link {
-            display: inline-block;
-            width: 100%;
-            margin-bottom: 5px;
-            display: inline-block;
-            padding: 10px 0px;
-            text-decoration: none;
-            color: black;
-            background-color: white;
-            transition: background-color 0.3s;
-        }
+    .section h2 {
+        color: black;
+        text-align: center;
+        font-size: x-large; /* Responsive font size for headers */
+    }
 
-        .link:hover {
-            background-color: #e0e0e0;
-        }
-    </style>
+    .link {
+        display: inline-block;
+        margin-bottom: 5px;
+        padding: 10px 0px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        transition: background-color 0.3s;
+        font-size: large; /* Responsive font size for links */
+    }
+
+    .link:hover {
+        background-color: #e0e0e0;
+    }
+</style>
+
 </head>
 <body>
     <div class="image-holder">
